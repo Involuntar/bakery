@@ -1,11 +1,15 @@
 <template>
     <div class="header">
-        <h3>Biskvitnyy Dvor</h3> 
-        <ul>
-            <li><NuxtLink to="/catalog">Каталог</NuxtLink></li>
-            <li><NuxtLink to="/about">О нас</NuxtLink></li>
-            <li><NuxtLink to="/corporateclients">Корпоративным клиентам</NuxtLink></li>
-        </ul>
+        <div>
+            <h3><NuxtLink to="/">Biskvitnyy Dvor</NuxtLink></h3>
+        </div>
+        <div>
+            <nav>
+                <p><NuxtLink to="/catalog">Каталог</NuxtLink></p>
+                <p><NuxtLink to="/about">О нас</NuxtLink></p>
+                <p><NuxtLink to="/corporateclients">Корпоративным клиентам</NuxtLink></p>
+            </nav>
+        </div>
         <div class="language-toggle">
             <button>Ru</button>
         </div>
@@ -17,31 +21,37 @@
     display: flex;
     align-items: center;
     background: linear-gradient(#00000026 67.07%, #66666608 96.54%);
+    background-color: #EAE2D3;
     margin: 0;
     height: 112px;
     justify-content: space-between;
+    padding: 0 50px;
 }
 
-ul {
-    list-style-type: none;
+.header div {
+    width: 33%;
+}
+
+nav {
     display: flex;
-    width: fit-content;
-    padding: 0;
+    justify-content: center;
 }
 
-li {
+nav p {
     margin: 10px;
-    font-size: 18px;
+    font-size: 16px;
+}
+
+.language-toggle {
+    text-align: right;
 }
 
 .language-toggle button {
-    font-size: 18px;
+    font-size: 14px;
     border: 1px solid black;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 15px;
-    width: 60px;
-    margin-right: 50px;
     text-align: center;
     vertical-align: middle;
     background: transparent;
@@ -66,7 +76,6 @@ a {
 h3 {
     font-family: "Inknut Antiqua";
     font-size: 18px;
-    text-align: left;
 }
 
 @font-face {

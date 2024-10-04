@@ -1,0 +1,35 @@
+{
+    "bento": [
+        {"Name": "a", "Amount": "a", "Price": 1, "Picture": "a", "New": false}
+    ],
+    "readyMadeCakes": [
+        {"Name": "b", "Amount": "b", "Price": 1, "Picture": "b", "New": false}
+    ],
+    "autumn": [
+        {"Name": "Пирожные-Ассорти", "Amount": 6, "Price": 2500, "Picture": "images/assorted.png", "New": true}, 
+        {"Name": "Пирожные-Ванильное-детство", "Amount": 2, "Price": 570, "Picture": "images/vanilaChildhood.png", "New": false}, 
+        {"Name": "Пирожные-Шу-Карамельное", "Amount": 6, "Price": 1500, "Picture": "images/caramelShoo.png", "New": false}, 
+        {"Name": "Пирожные-Трухлявый-пень", "Amount": 6, "Price": 1800, "Picture": "images/rottenStump.png", "New": false}, 
+        {"Name": "Пирожные-Какао-боб", "Amount": 2, "Price": 980, "Picture": "images/cacaoBean.png", "New": false}, 
+        {"Name": "Тарталетка-Пекан", "Amount": 2, "Price": 390, "Picture": "images/pekan.png", "New": false}, 
+        {"Name": "Пирожные-Крем-чиз-малина", "Amount": 6, "Price": 2160, "Picture": "images/creamCheeseRasp.png", "New": false}, 
+        {"Name": "Пирожное-Чародейка", "Amount": 2, "Price": 630, "Picture": "images/sorceress.png", "New": false}, 
+        {"Name": "Пирожное-шоколадная-вишня", "Amount": 5, "Price": 1300, "Picture": "images/chocoCherry.png", "New": false}, 
+        {"Name": "Пирожное-шоколад-малина", "Amount": 5, "Price": 1300, "Picture": "images/chocoRasp.png", "New": false}
+    ],
+    "cakes": [
+        {"Name": "c", "Amount": "c", "Price": 1, "Picture": "c", "New": false}
+    ],
+    "cupcakes": [
+        {"Name": "d", "Amount": "d", "Price": 1, "Picture": "d", "New": false}
+    ],
+    "ppDesert": [
+        {"Name": "e", "Amount": "e", "Price": 1, "Picture": "e", "New": false}
+    ],
+    "nonMasticCakes": [
+        {"Name": "f", "Amount": "f", "Price": 1, "Picture": "f", "New": false}
+    ],
+    "eclairs": [
+        {"Name": "g", "Amount": "g", "Price": 1, "Picture": "g", "New": false}
+    ]
+}
