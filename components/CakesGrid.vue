@@ -20,13 +20,12 @@
 export default {
     data() {
         return {
-            cakes: {},
             autumn: {}
         }
     }, 
     mounted() {
         fetch('categories.json').then(resp=>resp.json()).then(json=>{
-            this.autumn = json.autumn;
+            this.autumn = json.autumn.Items;
             console.log(json);
         })
     }, 
@@ -74,6 +73,7 @@ export default {
     width: fit-content;
     margin-bottom: 10px;
     position: relative;
+    font-family: JejuMyeongjo;
 }
 
 img {
@@ -84,6 +84,15 @@ img {
     display: flex;
     align-content: center;
     justify-content: space-between;
+}
+
+.cake-name {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.cake-price {
+    font-size: 14px;
 }
 
 .card-header {
@@ -120,6 +129,11 @@ img {
 
 p.show {
     display: block;
+}
+
+@font-face {
+    font-family: JejuMyeongjo;
+    src: url("../fonts/JejuMyeongjo-Regular.ttf");
 }
 
 </style>

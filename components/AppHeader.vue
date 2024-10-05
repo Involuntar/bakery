@@ -40,6 +40,7 @@ nav {
 nav p {
     margin: 10px;
     font-size: 16px;
+    font-family: "Inknut Antiqua";
 }
 
 .language-toggle {
@@ -55,6 +56,7 @@ nav p {
     text-align: center;
     vertical-align: middle;
     background: transparent;
+    font-family: "Inknut Antiqua";
 }
 
 .language-toggle button:hover {

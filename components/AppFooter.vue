@@ -14,14 +14,16 @@
     bottom: 0;
     position: fixed;
     height: 50px;
+    background: #3D3D3DFA;
 }
 
 .footer {
     display: flex;
     justify-content: space-between;
-    background: #3D3D3DFA;
     color: #FFFFFF;
-    padding: 0 40px;
+    padding: 5px 40px;
+    font-family: JejuMyeongjo;
+    font-size: 14px;
 }
 
 .policy {
@@ -38,5 +40,10 @@
 
 .footer a {
     color: #FFFFFF;
+}
+
+@font-face {
+    font-family: JejuMyeongjo;
+    src: url("../fonts/JejuMyeongjo-Regular.ttf");
 }
 </style>
