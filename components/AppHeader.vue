@@ -43,6 +43,10 @@ nav p {
     font-family: "Inknut Antiqua";
 }
 
+nav a:focus {
+    text-decoration: underline;
+}
+
 .language-toggle {
     text-align: right;
 }
