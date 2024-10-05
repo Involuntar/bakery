@@ -1,7 +1,7 @@
 <template>
     <div class="cakes-grid">
         <slot>
-            <div class="card" v-for="(aut, index) in autumn" :key="index">
+            <div class="card" v-for="(aut, index) in category.Items" :key="index">
                 <div class="card-header">
                     <p class="new" :class="(aut.New ? 'show' : '')">Новинка</p>
                     <p class="amount">{{ aut.Amount }} шт</p>
@@ -18,21 +18,20 @@
 
 <script>
 export default {
+    props: {
+        category: Object
+    },
     data() {
         return {
-            autumn: {}
+            cakes: []
         }
     }, 
-    mounted() {
-        fetch('categories.json').then(resp=>resp.json()).then(json=>{
-            this.autumn = json.autumn.Items;
-            console.log(json);
-        })
-    }, 
+    // mounted() {
+    //     fetch('categories.json').then(resp=>resp.json()).then(json=>{
+    //         this.cakes = json;
+    //     })
+    // }, 
     methods: {
-        showCakes() {
-            console.log(this.autumn);
-        }
     }
 }
 </script>

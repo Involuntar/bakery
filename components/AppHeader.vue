@@ -5,7 +5,7 @@
         </div>
         <div>
             <nav>
-                <p><NuxtLink to="/catalog">Каталог</NuxtLink></p>
+                <p><NuxtLink to="/catalog" class="">Каталог</NuxtLink></p>
                 <p><NuxtLink to="/about">О нас</NuxtLink></p>
                 <p><NuxtLink to="/corporateclients">Корпоративным клиентам</NuxtLink></p>
             </nav>
