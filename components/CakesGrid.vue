@@ -25,12 +25,7 @@ export default {
         return {
             cakes: []
         }
-    }, 
-    // mounted() {
-    //     fetch('categories.json').then(resp=>resp.json()).then(json=>{
-    //         this.cakes = json;
-    //     })
-    // }, 
+    },
     methods: {
     }
 }
@@ -73,6 +68,7 @@ export default {
     margin-bottom: 10px;
     position: relative;
     font-family: JejuMyeongjo;
+    height: 15%;
 }
 
 img {
