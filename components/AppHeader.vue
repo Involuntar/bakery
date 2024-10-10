@@ -19,6 +19,12 @@
             <span></span>
             <span></span>
             <span></span>
+
+            <ul class="menu">
+                <li><NuxtLink to="/catalog" class="">Каталог</NuxtLink></li>
+                <li><NuxtLink to="/about">О нас</NuxtLink></li>
+                <li><NuxtLink to="/corporateclients">Корпоративным клиентам</NuxtLink></li>
+            </ul>
         </div>
     </div>
 </template>
@@ -101,10 +107,54 @@ h3 {
     width: 40px;
     height: 40px;
     margin: 0;
-    z-index: 2;
+    z-index: 3;
     display: block;
     right: 15px;
     opacity: 0;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    list-style: none;
+    height: 100%;
+    width: 55%;
+    padding: 50px;
+    padding-top: 100px;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    z-index: 1;
+    background: #403e3a;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+.pages-hamburger input:checked ~ ul
+{
+  transform: translate(-50%, 0);
+}
+
+.pages-hamburger input:checked ~ span {
+    opacity: 1;
+    transform: rotate(-45deg) translate(2px, -5px);
+    background: white;
+}
+
+.pages-hamburger input:checked ~ span:nth-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.pages-hamburger input:checked ~ span:nth-child(4)
+{
+  transform: rotate(45deg);
 }
 
 .pages-hamburger span {
@@ -117,7 +167,10 @@ h3 {
     left: 100%;
     border-radius: 5px;
 
-    z-index: 1;
+    transform-origin: 100% 0;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+    z-index: 2;
 }
 
 @media (width <= 600px) {
