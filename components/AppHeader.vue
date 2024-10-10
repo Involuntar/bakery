@@ -3,7 +3,7 @@
         <div>
             <h3><NuxtLink to="/">Biskvitnyy Dvor</NuxtLink></h3>
         </div>
-        <div>
+        <div class="pages">
             <nav>
                 <p><NuxtLink to="/catalog" class="">Каталог</NuxtLink></p>
                 <p><NuxtLink to="/about">О нас</NuxtLink></p>
@@ -12,6 +12,13 @@
         </div>
         <div class="language-toggle">
             <button>Ru</button>
+        </div>
+        <div class="pages-hamburger">
+            <input type="checkbox">
+
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </div>
 </template>
@@ -82,6 +89,45 @@ a {
 h3 {
     font-family: "Inknut Antiqua";
     font-size: 18px;
+}
+
+.pages-hamburger {
+    display: none;
+    text-align: right;
+}
+
+.pages-hamburger input {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    z-index: 2;
+    display: block;
+    right: 15px;
+    opacity: 0;
+}
+
+.pages-hamburger span {
+    position: relative;
+    width: 33px;
+    height: 4px;
+    background: #403e3a;
+    display: block;
+    margin-bottom: 5px;
+    left: 100%;
+    border-radius: 5px;
+
+    z-index: 1;
+}
+
+@media (width <= 600px) {
+    .pages-hamburger {
+        display: block;
+    }
+
+    .pages {
+        display: none;
+    }
 }
 
 @font-face {
