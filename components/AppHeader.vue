@@ -21,12 +21,12 @@
             <span></span>
 
             <ul class="menu">
-                <li><NuxtLink to="/catalog" class="">Каталог</NuxtLink></li>
-                <li><NuxtLink to="/about">О нас</NuxtLink></li>
-                <li><NuxtLink to="/corporateclients">Корпоративным клиентам</NuxtLink></li>
                 <li>
                     <button>Ru</button>
                 </li>
+                <li><NuxtLink to="/catalog" class="">Каталог</NuxtLink></li>
+                <li><NuxtLink to="/about">О нас</NuxtLink></li>
+                <li><NuxtLink to="/corporateclients">Корпоративным клиентам</NuxtLink></li>
             </ul>
         </div>
     </div>
@@ -67,7 +67,7 @@ nav a:focus {
     text-align: right;
 }
 
-.language-toggle button {
+.language-toggle button, .menu button {
     font-size: 14px;
     border: 1px solid black;
     width: 50px;
@@ -79,12 +79,17 @@ nav a:focus {
     font-family: "Inknut Antiqua";
 }
 
-.language-toggle button:hover {
+.menu button {
+    border: 1px solid #EAE2D3;
+    color: #EAE2D3;
+}   
+
+.language-toggle button:hover, .menu button:hover {
     background: linear-gradient(#66666608 67.07%, #00000026 96.54%);
     cursor: pointer;
 }
 
-.language-toggle button:active {
+.language-toggle button:active, .menu button:active {
     background: linear-gradient(#66666616 67.07%, #00000052 96.54%);
     box-shadow: inset 0 0 5px 1px black, 0 0 10px 3px white;
     color: white;
@@ -131,6 +136,10 @@ h3 {
     background: #403e3a;
     
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.menu li:nth-child(1) {
+    margin-bottom: 50px;
 }
 
 .menu li {
@@ -185,7 +194,7 @@ h3 {
         display: block;
     }
 
-    .pages {
+    .pages, .language-toggle button {
         display: none;
     }
 }
