@@ -24,6 +24,9 @@
                 <li><NuxtLink to="/catalog" class="">Каталог</NuxtLink></li>
                 <li><NuxtLink to="/about">О нас</NuxtLink></li>
                 <li><NuxtLink to="/corporateclients">Корпоративным клиентам</NuxtLink></li>
+                <li>
+                    <button>Ru</button>
+                </li>
             </ul>
         </div>
     </div>
@@ -135,6 +138,10 @@ h3 {
     font-size: 22px;
 }
 
+.menu a {
+    color: #EAE2D3;
+}
+
 .pages-hamburger input:checked ~ ul
 {
   transform: translate(-50%, 0);
@@ -154,7 +161,7 @@ h3 {
 
 .pages-hamburger input:checked ~ span:nth-child(4)
 {
-  transform: rotate(45deg);
+  transform: rotate(45deg) translate(1px, 0);
 }
 
 .pages-hamburger span {
