@@ -10,5 +10,6 @@
 body {
   margin: 0;
   background-color: #EAE2D3;
+  overflow-x: hidden;
 }
 </style>
