@@ -1,7 +1,7 @@
 <template>
     <div class="catalog">
         <div class="catalog-header">
-            <p class="category">Осенняя коллекция</p>
+            <p class="category">{{ catHeader }}</p>
             <p>Семейная кондитерская, создающая сбалансированные десерты на каждый день и уникальные торты по индивидуальному заказу.</p>
         </div>
         <div class="categories">
@@ -17,17 +17,23 @@ export default {
     data() {
         return {
             cakes: [],
-            choosenCat: []
+            choosenCat: [],
+            catHeader: ''
         }
     },
     mounted() {
         fetch('categories.json').then(resp=>resp.json()).then(json=>{
             this.cakes = json;
+            this.catHeader = json.autumn.CatName;
+            this.choosenCat = json.autumn;
+            console.log(json);
         })
+
     },
     methods: {
         chooseCat(cat) {
             this.choosenCat = cat;
+            this.catHeader = cat.CatName;
             console.log(this.choosenCat);
         }
     }

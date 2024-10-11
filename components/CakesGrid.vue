@@ -1,15 +1,15 @@
 <template>
     <div class="cakes-grid">
         <slot>
-            <div class="card" v-for="(aut, index) in category.Items" :key="index">
+            <div class="card" v-for="(item, index) in category.Items" :key="index">
                 <div class="card-header">
-                    <p class="new" :class="(aut.New ? 'show' : '')">Новинка</p>
-                    <p class="amount">{{ aut.Amount }} шт</p>
+                    <p class="new" :class="(item.New ? 'show' : '')">Новинка</p>
+                    <p class="amount">{{ item.Amount }} шт</p>
                 </div>
-                <img :src="aut.Picture" alt="" width="280px" height="320px">
+                <img :src="item.Picture" alt="" width="280px" height="320px">
                 <div class="cake-props">
-                    <p class="cake-name">{{ aut.Name }}</p>
-                    <p class="cake-price">{{ aut.Price }} руб</p>
+                    <p class="cake-name">{{ item.Name }}</p>
+                    <p class="cake-price">{{ item.Price }} руб</p>
                 </div>
             </div>
         </slot>
@@ -35,9 +35,10 @@ export default {
 
 .cakes-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fill, 300px);
     margin-bottom: 50px;
     justify-items: center;
+    justify-content: center;
     gap: 50px 10px;
     overflow-y: scroll;
     scroll-behavior: smooth;

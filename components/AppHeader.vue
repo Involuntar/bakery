@@ -197,6 +197,10 @@ h3 {
     .pages, .language-toggle button {
         display: none;
     }
+
+    body {
+        max-width: 600px;
+    }
 }
 
 @font-face {
