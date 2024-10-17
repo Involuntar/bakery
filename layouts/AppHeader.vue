@@ -122,7 +122,7 @@ h3 {
 }
 
 .menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     margin: 0;
     list-style: none;
@@ -136,6 +136,7 @@ h3 {
     background: #403e3a;
     
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    overflow-x: hidden;
 }
 
 .menu li:nth-child(1) {
@@ -189,7 +190,7 @@ h3 {
     z-index: 2;
 }
 
-@media (width <= 600px) {
+@media screen and (width <= 600px) {
     .pages-hamburger {
         display: block;
     }
