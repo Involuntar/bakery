@@ -103,6 +103,7 @@ a {
 h3 {
     font-family: "Inknut Antiqua";
     font-size: 18px;
+    width: 100%;
 }
 
 .pages-hamburger {
@@ -190,7 +191,7 @@ h3 {
     z-index: 2;
 }
 
-@media screen and (width <= 600px) {
+@media screen and (width <= 768px) {
     .pages-hamburger {
         display: block;
     }
@@ -200,8 +201,17 @@ h3 {
     }
 
     body {
-        max-width: 600px;
+        max-width: 100vw;
     }
+
+    .header div:nth-child(1) {
+        width: 100%;
+    }
+
+    .menu {
+        padding-right: 30%;
+    }
+
 }
 
 @font-face {
