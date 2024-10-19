@@ -42,6 +42,41 @@
     color: #FFFFFF;
 }
 
+@media screen and (width <= 768px) {
+    .app-footer {
+        height: 50px;
+    }
+    
+    .footer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        font-size: 8px;
+        text-align: left;
+    }
+
+    .footer p {
+        width: 100%;
+        text-align: left;
+    }
+
+    .footer p:nth-child(1) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .footer p:nth-child(2) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 2;
+    }
+
+    .footer p:nth-child(3) {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+        text-align: right;
+    }
+}
+
 @font-face {
     font-family: JejuMyeongjo;
     src: url("../fonts/JejuMyeongjo-Regular.ttf");
