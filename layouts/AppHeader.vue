@@ -21,7 +21,7 @@
             <span></span>
 
             <ul class="menu">
-                <li>
+                <li class="language-toggle-mobile">
                     <button>Ru</button>
                 </li>
                 <li><NuxtLink to="/catalog" class="">Каталог</NuxtLink></li>
@@ -108,7 +108,6 @@ h3 {
 
 .pages-hamburger {
     display: none;
-    text-align: right;
 }
 
 .pages-hamburger input {
@@ -128,13 +127,13 @@ h3 {
     margin: 0;
     list-style: none;
     height: 100%;
-    width: 55%;
+    width: 100%;
     padding: 50px;
     padding-top: 100px;
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
     z-index: 1;
-    background: #403e3a;
+    background: #515151FA;
     
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     overflow-x: hidden;
@@ -145,8 +144,13 @@ h3 {
 }
 
 .menu li {
-    padding: 10px 0;
-    font-size: 22px;
+    padding: 15px 34px;
+    font-size: 24px;
+}
+
+.language-toggle-mobile {
+    position: absolute;
+    top: 10px;
 }
 
 .menu a {
@@ -155,7 +159,7 @@ h3 {
 
 .pages-hamburger input:checked ~ ul
 {
-  transform: translate(-50%, 0);
+    transform: translate(-55%, 0);
 }
 
 .pages-hamburger input:checked ~ span {
@@ -166,13 +170,13 @@ h3 {
 
 .pages-hamburger input:checked ~ span:nth-child(3)
 {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
 }
 
 .pages-hamburger input:checked ~ span:nth-child(4)
 {
-  transform: rotate(45deg) translate(1px, 0);
+    transform: rotate(45deg) translate(1px, 0);
 }
 
 .pages-hamburger span {
