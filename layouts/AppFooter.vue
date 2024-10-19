@@ -50,7 +50,7 @@
     .footer {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 40% 40%;
         font-size: 8px;
         text-align: left;
     }

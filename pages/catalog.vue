@@ -71,6 +71,11 @@ export default {
     cursor: pointer;
 }
 
+.categories-mobile {
+    display: none;
+    padding-top: 48px;
+}
+
 .categories button:focus {
     background: #DEC9B5;
     border: 1px solid #000000;
@@ -97,6 +102,14 @@ export default {
 
     .catalog-header {
         padding-bottom: 50px;
+    }
+
+    .catalog-header p:nth-child(2) {
+        text-align: right;
+    }
+
+    .categories-mobile {
+        display: block
     }
 }
 
