@@ -89,7 +89,7 @@ export default {
 .filters {
     width: 30px;
     height: 30px;
-    background: center no-repeat url("/public/images/Vector.svg");
+    background: center no-repeat url("/public/images/Filters.svg");
     background-color: #FFF;
     border-radius: 10px;
     border: 1px solid #000;
