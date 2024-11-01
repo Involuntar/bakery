@@ -7,9 +7,7 @@
         <div class="categories">
             <button v-for="(cat, index) in cakes" :key="index" @click="chooseCat(cat)">{{ cat.CatName }}</button>
         </div>
-        <div class="categories-mobile">
-            <button class="filters"></button>
-        </div>
+        <Filters />
         <CakesGrid :category="choosenCat" />
     </div>
 </template>
@@ -43,7 +41,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .catalog-header {
     padding: 0 40px;
     height: 25vh;
@@ -84,15 +82,6 @@ export default {
 .categories-mobile {
     padding-left: 34px;
     padding-bottom: 36px;
-}
-
-.filters {
-    width: 30px;
-    height: 30px;
-    background: center no-repeat url("/public/images/Filters.svg");
-    background-color: #FFF;
-    border-radius: 10px;
-    border: 1px solid #000;
 }
 
 @media (width <= 768px) {

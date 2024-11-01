@@ -39,7 +39,7 @@
     background: linear-gradient(#00000026 67.07%, #66666608 96.54%);
     background-color: #EAE2D3;
     margin: 0;
-    height: 5%;
+    height: 83px;
     justify-content: space-between;
     padding: 0 50px;
 }
