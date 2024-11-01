@@ -1,13 +1,13 @@
 <template>
     <div class="catalog">
         <div class="catalog-header">
-            <p class="category">{{ catHeader }}</p>
+            <p class="category-name">{{ catHeader }}</p>
             <p>Семейная кондитерская, создающая сбалансированные десерты на каждый день и уникальные торты по индивидуальному заказу.</p>
         </div>
         <div class="categories">
             <button v-for="(cat, index) in cakes" :key="index" @click="chooseCat(cat)">{{ cat.CatName }}</button>
         </div>
-        <Filters />
+        <Filters :cakes="cakes"/>
         <CakesGrid :category="choosenCat" />
     </div>
 </template>
@@ -48,7 +48,7 @@ export default {
     margin-bottom: 20px;
 }
 
-.category {
+.category-name {
     font-size: 55px;
     font-family: JejuMyeongjo;
 }
