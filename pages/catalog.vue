@@ -35,7 +35,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+.catalog {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .catalog-header {
     padding: 0 40px;
     height: 25vh;
