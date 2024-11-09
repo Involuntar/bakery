@@ -30,14 +30,14 @@ export default {
 
 .cakes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-columns: repeat(auto-fill, 250px);
     margin-bottom: 50px;
     justify-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 50px 10px;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    height: 375px;
+    height: 700px;
 }
 
 .cakes-grid::-webkit-scrollbar {
@@ -120,6 +120,12 @@ img {
 
 p.show {
     display: block;
+}
+
+@media screen and (height >= 1440px) {
+    .cakes-grid {
+        height: 900px;
+    }
 }
 
 @font-face {

@@ -43,8 +43,12 @@ export default {
 
 .catalog-header {
     padding: 0 40px;
-    height: 25vh;
+    height: 200px;
     margin-bottom: 20px;
+}
+
+.catalog-header p:nth-child(2) {
+    font-size: 20px;
 }
 
 .category-name {
@@ -98,6 +102,22 @@ export default {
 
     .categories-mobile {
         display: block
+    }
+}
+
+@media screen and (width >= 2000) {
+    .category-name {
+        font-size: 85px;
+    }
+
+    .catalog-header p:nth-child(2) {
+        font-size: 65px;
+        margin-bottom: 0;
+    }
+
+    .catalog-header {
+        margin-bottom: 0;
+        height: fit-content;
     }
 }
 
