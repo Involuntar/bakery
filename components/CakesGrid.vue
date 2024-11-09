@@ -20,8 +20,6 @@
 import { mapGetters } from 'vuex';
 
 export default {
-    data() {},
-    methods: {},
     computed: {
         ...mapGetters(['getCategory'])
     }

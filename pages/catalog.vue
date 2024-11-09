@@ -1,42 +1,36 @@
 <template>
     <div class="catalog">
         <div class="catalog-header">
-            <p class="category-name">{{ catHeader }}</p>
+            <p class="category-name">{{ getCategory.CatName }}</p>
             <p>Семейная кондитерская, создающая сбалансированные десерты на каждый день и уникальные торты по индивидуальному заказу.</p>
         </div>
         <div class="categories">
-            <button v-for="(cat, index) in cakes" :key="index" @click="chooseCat(cat)">{{ cat.CatName }}</button>
+            <button v-for="(cat, index) in getCakes" :key="index" @click="chooseCat(cat)">{{ cat.CatName }}</button>
         </div>
-        <Filters :cakes="cakes"/>
+        <Filters />
         <CakesGrid />
     </div>
 </template>
 
 <script>
 import { mapMutations } from 'vuex';
+import { mapActions } from 'vuex';
+import { mapGetters } from 'vuex';
 
 
 export default {
-    data() {
-        return {
-            cakes: [],
-            catHeader: ''
-        }
-    },
     mounted() {
-        fetch('categories.json').then(resp=>resp.json()).then(json=>{
-            this.cakes = json;
-            this.catHeader = json.autumn.CatName;
-            this.changeCat(json.autumn);
-        })
-
+        this.fetchCakes();
     },
     methods: {
+        ...mapActions(['fetchCakes']),
         ...mapMutations(['changeCat']),
         chooseCat(cat) {
             this.changeCat(cat);
-            this.catHeader = cat.CatName;
         }
+    },
+    computed: {
+        ...mapGetters(['getCakes', 'getCategory'])
     }
 }
 </script>

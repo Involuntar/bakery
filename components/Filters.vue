@@ -6,7 +6,7 @@
         <button class="close-filters-button" @click="status = !status"></button>
         <h1 class="filters-h1">Фильтры каталога</h1>
         <div class="filters-palete">
-          <button v-for="cake in cakes" class="category" @click="chooseCat(cake)">
+          <button v-for="cake in getCakes" class="category" @click="chooseCat(cake)">
             {{ cake.CatName }}
           </button>
         </div>
@@ -17,11 +17,9 @@
 
 <script>
 import { mapMutations } from 'vuex';
+import { mapGetters } from 'vuex';
 
 export default {
-  props: {
-    cakes: Object
-  },
   data() {
     return {
       status: false
@@ -31,10 +29,11 @@ export default {
     ...mapMutations(['changeCat']),
     chooseCat(cat) {
      this.changeCat(cat);
-     this.status = false; 
+     this.status = false;
     }
   },
   computed: {
+    ...mapGetters(['getCakes']),
     filtersStatus: function() {
       if (this.status == true) {
         return 'checked';

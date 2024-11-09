@@ -5,24 +5,31 @@ const store = createStore({
   state () {
     return {
       category: [],
-      cakes: []
+      cakes: {}
     }
   },
   mutations: {
-    changeCat (state, cakes) {
-        state.category = cakes;
+    changeCat (state, cat) {
+      state.category = cat;
+    },
+    fetchingCakes(state, cakes) {
+      state.cakes = cakes;
     }
   },
   actions: {
-    fetchCakes(state) {
+    fetchCakes({commit}) {
       fetch('categories.json').then(resp=>resp.json()).then(json=>{
-        state.cakes = json;
+        commit('fetchingCakes', json);
+        commit('changeCat', json.autumn);
       });
     }
   },
   getters: {
     getCategory(state) {
       return state.category;
+    },
+    getCakes(state) {
+      return state.cakes;
     }
   }
 })
