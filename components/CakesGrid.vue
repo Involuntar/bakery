@@ -1,7 +1,7 @@
 <template>
     <div class="cakes-grid">
         <slot>
-            <div class="card" v-for="(item, index) in category.Items" :key="index">
+            <div class="card" v-for="(item, index) in getCategory.Items" :key="index">
                 <div class="card-header">
                     <p class="new" :class="(item.New ? 'show' : '')">Новинка</p>
                     <p class="amount">{{ item.Amount }} шт</p>
@@ -17,16 +17,13 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
-    props: {
-        category: Object
-    },
-    data() {
-        return {
-            cakes: []
-        }
-    },
-    methods: {
+    data() {},
+    methods: {},
+    computed: {
+        ...mapGetters(['getCategory'])
     }
 }
 </script>

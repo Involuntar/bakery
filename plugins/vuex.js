@@ -1,11 +1,11 @@
-import { createApp } from 'vue'
 import { createStore } from 'vuex'
 
 // Create a new store instance.
 const store = createStore({
   state () {
     return {
-      category: null
+      category: [],
+      cakes: []
     }
   },
   mutations: {
@@ -13,7 +13,13 @@ const store = createStore({
         state.category = cakes;
     }
   },
-  actions: {},
+  actions: {
+    fetchCakes(state) {
+      fetch('categories.json').then(resp=>resp.json()).then(json=>{
+        state.cakes = json;
+      });
+    }
+  },
   getters: {
     getCategory(state) {
       return state.category;
@@ -21,7 +27,6 @@ const store = createStore({
   }
 })
 
-const app = createApp({ app })
-
-// Install the store instance as a plugin
-app.use(store)
+export default defineNuxtPlugin((nuxtApp) => {
+    nuxtApp.vueApp.use(store);
+})

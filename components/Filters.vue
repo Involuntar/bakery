@@ -16,6 +16,8 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
+
 export default {
   props: {
     cakes: Object
@@ -26,8 +28,10 @@ export default {
     }
   },
   methods: {
+    ...mapMutations(['changeCat']),
     chooseCat(cat) {
-      this.$emit('chooseCat', cat);
+     this.changeCat(cat);
+     this.status = false; 
     }
   },
   computed: {

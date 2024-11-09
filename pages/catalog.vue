@@ -8,17 +8,18 @@
             <button v-for="(cat, index) in cakes" :key="index" @click="chooseCat(cat)">{{ cat.CatName }}</button>
         </div>
         <Filters :cakes="cakes"/>
-        <CakesGrid :category="choosenCat" />
+        <CakesGrid />
     </div>
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
+
 
 export default {
     data() {
         return {
             cakes: [],
-            choosenCat: [],
             catHeader: ''
         }
     },
@@ -26,16 +27,15 @@ export default {
         fetch('categories.json').then(resp=>resp.json()).then(json=>{
             this.cakes = json;
             this.catHeader = json.autumn.CatName;
-            this.choosenCat = json.autumn;
-            console.log(json);
+            this.changeCat(json.autumn);
         })
 
     },
     methods: {
+        ...mapMutations(['changeCat']),
         chooseCat(cat) {
-            this.choosenCat = cat;
+            this.changeCat(cat);
             this.catHeader = cat.CatName;
-            console.log(this.choosenCat);
         }
     }
 }
