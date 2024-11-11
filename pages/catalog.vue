@@ -1,56 +1,57 @@
 <template>
     <div class="catalog">
         <div class="catalog-header">
-            <p class="category">{{ catHeader }}</p>
+            <p class="category-name">{{ getCategory.CatName }}</p>
             <p>Семейная кондитерская, создающая сбалансированные десерты на каждый день и уникальные торты по индивидуальному заказу.</p>
         </div>
         <div class="categories">
-            <button v-for="(cat, index) in cakes" :key="index" @click="chooseCat(cat)">{{ cat.CatName }}</button>
+            <button v-for="(cat, index) in getCakes" :key="index" @click="chooseCat(cat)">{{ cat.CatName }}</button>
         </div>
-        <div class="categories-mobile">
-            <button class="filters"></button>
-        </div>
-        <CakesGrid :category="choosenCat" />
+        <Filters />
+        <CakesGrid />
     </div>
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
+import { mapActions } from 'vuex';
+import { mapGetters } from 'vuex';
+
 
 export default {
-    data() {
-        return {
-            cakes: [],
-            choosenCat: [],
-            catHeader: ''
-        }
-    },
     mounted() {
-        fetch('categories.json').then(resp=>resp.json()).then(json=>{
-            this.cakes = json;
-            this.catHeader = json.autumn.CatName;
-            this.choosenCat = json.autumn;
-            console.log(json);
-        })
-
+        this.fetchCakes();
     },
     methods: {
+        ...mapActions(['fetchCakes']),
+        ...mapMutations(['changeCat']),
         chooseCat(cat) {
-            this.choosenCat = cat;
-            this.catHeader = cat.CatName;
-            console.log(this.choosenCat);
+            this.changeCat(cat);
         }
+    },
+    computed: {
+        ...mapGetters(['getCakes', 'getCategory'])
     }
 }
 </script>
 
 <style>
+.catalog {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .catalog-header {
     padding: 0 40px;
-    height: 25vh;
+    height: 200px;
     margin-bottom: 20px;
 }
 
-.category {
+.catalog-header p:nth-child(2) {
+    font-size: 20px;
+}
+
+.category-name {
     font-size: 55px;
     font-family: JejuMyeongjo;
 }
@@ -86,15 +87,6 @@ export default {
     padding-bottom: 36px;
 }
 
-.filters {
-    width: 30px;
-    height: 30px;
-    background: center no-repeat url("/public/images/Filters.svg");
-    background-color: #FFF;
-    border-radius: 10px;
-    border: 1px solid #000;
-}
-
 @media (width <= 768px) {
     .categories {
         display: none;
@@ -110,6 +102,22 @@ export default {
 
     .categories-mobile {
         display: block
+    }
+}
+
+@media screen and (width >= 2000) {
+    .category-name {
+        font-size: 85px;
+    }
+
+    .catalog-header p:nth-child(2) {
+        font-size: 65px;
+        margin-bottom: 0;
+    }
+
+    .catalog-header {
+        margin-bottom: 0;
+        height: fit-content;
     }
 }
 

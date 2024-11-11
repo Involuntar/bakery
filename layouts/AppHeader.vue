@@ -1,47 +1,67 @@
 <template>
-    <div class="header">
-        <div>
-            <h3><NuxtLink to="/">Biskvitnyy Dvor</NuxtLink></h3>
-        </div>
-        <div class="pages">
-            <nav>
-                <p><NuxtLink to="/catalog" class="">Каталог</NuxtLink></p>
-                <p><NuxtLink to="/about">О нас</NuxtLink></p>
-                <p><NuxtLink to="/corporateclients">Корпоративным клиентам</NuxtLink></p>
-            </nav>
-        </div>
-        <div class="language-toggle">
-            <button>Ru</button>
-        </div>
-        <div class="pages-hamburger">
-            <input type="checkbox">
+    <div class="main-header">
+        <div class="header">
+            <div>
+                <h3>
+                    <NuxtLink to="/">Biskvitnyy Dvor</NuxtLink>
+                </h3>
+            </div>
+            <div class="pages">
+                <nav>
+                    <p>
+                        <NuxtLink to="/catalog" class="">Каталог</NuxtLink>
+                    </p>
+                    <p>
+                        <NuxtLink to="/about">О нас</NuxtLink>
+                    </p>
+                    <p>
+                        <NuxtLink to="/corporateclients">Корпоративным клиентам</NuxtLink>
+                    </p>
+                </nav>
+            </div>
+            <div class="language-toggle">
+                <button>Ru</button>
+            </div>
+            <div class="pages-hamburger">
+                <input type="checkbox">
 
-            <span></span>
-            <span></span>
-            <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
 
-            <ul class="menu">
-                <li class="language-toggle-mobile">
-                    <button>Ru</button>
-                </li>
-                <li><NuxtLink to="/catalog" class="">Каталог</NuxtLink></li>
-                <li><NuxtLink to="/about">О нас</NuxtLink></li>
-                <li><NuxtLink to="/corporateclients">Корпоративным клиентам</NuxtLink></li>
-            </ul>
+                <ul class="menu">
+                    <li class="language-toggle-mobile">
+                        <button>Ru</button>
+                    </li>
+                    <li>
+                        <NuxtLink to="/catalog" class="">Каталог</NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink to="/about">О нас</NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink to="/corporateclients">Корпоративным клиентам</NuxtLink>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
 
 <style>
+.main-header {
+    background: linear-gradient(#00000026 67.07%, #66666608 96.54%);
+    background-color: #EAE2D3;
+}
+
 .header {
     display: flex;
     align-items: center;
-    background: linear-gradient(#00000026 67.07%, #66666608 96.54%);
-    background-color: #EAE2D3;
-    margin: 0;
-    height: 5%;
+    margin: 0 auto;
+    height: 83px;
     justify-content: space-between;
     padding: 0 50px;
+    max-width: 1200px;
 }
 
 .header div {
@@ -67,7 +87,8 @@ nav a:focus {
     text-align: right;
 }
 
-.language-toggle button, .menu button {
+.language-toggle button,
+.menu button {
     font-size: 14px;
     border: 1px solid black;
     width: 50px;
@@ -82,14 +103,16 @@ nav a:focus {
 .menu button {
     border: 1px solid #EAE2D3;
     color: #EAE2D3;
-}   
+}
 
-.language-toggle button:hover, .menu button:hover {
+.language-toggle button:hover,
+.menu button:hover {
     background: linear-gradient(#66666608 67.07%, #00000026 96.54%);
     cursor: pointer;
 }
 
-.language-toggle button:active, .menu button:active {
+.language-toggle button:active,
+.menu button:active {
     background: linear-gradient(#66666616 67.07%, #00000052 96.54%);
     box-shadow: inset 0 0 5px 1px black, 0 0 10px 3px white;
     color: white;
@@ -134,8 +157,8 @@ h3 {
     transform: translate(100%, 0);
     z-index: 1;
     background: #515151FA;
-    
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
     overflow-x: hidden;
 }
 
@@ -157,25 +180,22 @@ h3 {
     color: #EAE2D3;
 }
 
-.pages-hamburger input:checked ~ ul
-{
+.pages-hamburger input:checked~ul {
     transform: translate(-55%, 0);
 }
 
-.pages-hamburger input:checked ~ span {
+.pages-hamburger input:checked~span {
     opacity: 1;
     transform: rotate(-45deg) translate(2px, -5px);
     background: white;
 }
 
-.pages-hamburger input:checked ~ span:nth-child(3)
-{
+.pages-hamburger input:checked~span:nth-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-.pages-hamburger input:checked ~ span:nth-child(4)
-{
+.pages-hamburger input:checked~span:nth-child(4) {
     transform: rotate(45deg) translate(1px, 0);
 }
 
@@ -195,12 +215,13 @@ h3 {
     z-index: 2;
 }
 
-@media screen and (width <= 768px) {
+@media screen and (width <=768px) {
     .pages-hamburger {
         display: block;
     }
 
-    .pages, .language-toggle button {
+    .pages,
+    .language-toggle button {
         display: none;
     }
 

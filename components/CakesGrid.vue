@@ -1,7 +1,7 @@
 <template>
     <div class="cakes-grid">
         <slot>
-            <div class="card" v-for="(item, index) in category.Items" :key="index">
+            <div class="card" v-for="(item, index) in getCategory.Items" :key="index">
                 <div class="card-header">
                     <p class="new" :class="(item.New ? 'show' : '')">Новинка</p>
                     <p class="amount">{{ item.Amount }} шт</p>
@@ -17,16 +17,11 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
-    props: {
-        category: Object
-    },
-    data() {
-        return {
-            cakes: []
-        }
-    },
-    methods: {
+    computed: {
+        ...mapGetters(['getCategory'])
     }
 }
 </script>
@@ -35,14 +30,14 @@ export default {
 
 .cakes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-columns: repeat(auto-fill, 250px);
     margin-bottom: 50px;
     justify-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 50px 10px;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    height: 375px;
+    height: 700px;
 }
 
 .cakes-grid::-webkit-scrollbar {
@@ -125,6 +120,12 @@ img {
 
 p.show {
     display: block;
+}
+
+@media screen and (height >= 1440px) {
+    .cakes-grid {
+        height: 900px;
+    }
 }
 
 @font-face {
