@@ -26,7 +26,7 @@
                 <a href="/catalog">Открыть каталог</a>
             </div>
         </div>
-        <Cardindex/> <!--Необходимо понять как правильно генерировать свои карточки для данной страницы-->
+        <!--Cardindex-->
         <div class="storylife">
             <div class="photolife">
                 <img src="/public/images/lifephoto.png" alt="lifePhoto">
@@ -73,7 +73,7 @@ ul{
     color: aliceblue;
     margin-bottom: 2vh;
     text-align: right;
-    font-family: InknutAntiqua-Regular;
+    font-family: InknutAntiqua;
     font-size: 18px;
 }
 .topInfo{
@@ -107,7 +107,6 @@ ul{
     display: grid;
     grid-template-columns: auto auto;
     margin: 4vh auto 10vh auto;
-    background-color: brown;
 }
 .photolife{
     position: relative;
