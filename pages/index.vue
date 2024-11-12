@@ -4,27 +4,29 @@
     </div>
     <div class="main">
         <div class="container-info">
-            <div class="colum1">
-                <h1>Осенняя коллекция</h1>
-                <a id="colortext" href="">Открыть каталог</a>
-            </div> 
-            <div class="colum2">
-                <ul>
-                    <li>+7 499 322-00-20</li>
-                    <li>пн-пт 10:00–20:00 (Москва)</li>
-                    <li>сб-вс 10:00-17:00</li>
-                </ul>           
+            <div class="container">
+                <div class="colum1">
+                    <h1>Осенняя коллекция</h1>
+                    <a href="/catalog">Открыть каталог</a>
+                </div> 
+                <div class="colum2">
+                    <ul>
+                        <li>+7 499 322-00-20</li>
+                        <li>пн-пт 10:00–20:00 (Москва)</li>
+                        <li>сб-вс 10:00-17:00</li>
+                    </ul>           
+                </div>
             </div>
+            
         </div>
         <div class="topInfo">
             <p id="H1">В основе Biskvitnyy Dvor лежит философия семьи , домашнего тепла и уюта, направленное на заботу о вас.</p>
             <div class="blotopinfo">
                 <p>Сбалансированные сладости для встречи за кофе с подругой, уютных посиделок с близкими или свидания с собой.</p>
-                <a href="#">Открыть каталог</a>
+                <a href="/catalog">Открыть каталог</a>
             </div>
         </div>
-        <div class="category">
-        </div>
+        <Cardindex/> <!--Необходимо понять как правильно генерировать свои карточки для данной страницы-->
         <div class="storylife">
             <div class="photolife">
                 <img src="/public/images/lifephoto.png" alt="lifePhoto">
@@ -36,7 +38,8 @@
         </div>
     </div>
 </template>
-
+<script>
+</script>
 <style>
 ul{
     list-style: none;
@@ -48,21 +51,33 @@ ul{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 30vh 7vh 2vh 7vh;
-    display: grid;
-    grid-template-columns: auto auto;
+    padding: 40vh 7vh 2vh 7vh;
     text-align: left;
     gap: 10vh;
 }
-
-.colum1{
-    color: aliceblue;
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
 }
-.colum2{
+.colum1 h1{
+    font-family: JejuMyeongjo-Regular;
+    font-size: 50px;
+    margin-top: 0px;
+}
+.colum1 a{
     color: aliceblue;
+    text-decoration: underline;
+    font-size: 28px;
+}
+.colum2 ul li{
+    color: aliceblue;
+    margin-bottom: 2vh;
+    text-align: right;
+    font-family: InknutAntiqua-Regular;
+    font-size: 18px;
 }
 .topInfo{
-    padding: 2vh 24vh 2vh 24vh;
+    padding: 4vh 24vh 2vh 24vh;
     display: grid;
     grid-template-columns: auto auto;
     gap: 20vh;
@@ -70,16 +85,29 @@ ul{
 .topInfo #H1{
     font-family: JejuMyeongjo;
     font-size: 32px;
+    margin-top: 0vh;
 }
-.topInfo.blotopinfo p{
-    font-size: 14px;
-} 
+.blotopinfo{
+    text-align: right;
+}
+.blotopinfo p{
+    font-size: 16px;
+    font-family: JejuMyeongjo;
+    padding-bottom: 2vh;
+    margin-top: 0vh;
+}
+.blotopinfo a{
+    text-decoration: underline;
+    font-size: 20px;
+}
 .storylife{
     max-width: 1000px;
     max-height: 580px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto;
+    margin: 4vh auto 10vh auto;
+    background-color: brown;
 }
 .photolife{
     position: relative;
