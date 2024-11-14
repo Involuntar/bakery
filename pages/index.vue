@@ -16,8 +16,7 @@
                         <li>сб-вс 10:00-17:00</li>
                     </ul>           
                 </div>
-            </div>
-            
+            </div> 
         </div>
         <div class="topInfo">
             <p id="H1">В основе Biskvitnyy Dvor лежит философия семьи , домашнего тепла и уюта, направленное на заботу о вас.</p>
@@ -51,13 +50,14 @@ ul{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 40vh 7vh 2vh 7vh;
+    padding: 40vh 0vh 2vh 0vh;
     text-align: left;
-    gap: 10vh;
 }
 .container{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
+}
+.colum1{
 }
 .colum1 h1{
     font-family: JejuMyeongjo-Regular;
@@ -68,6 +68,9 @@ ul{
     color: aliceblue;
     text-decoration: underline;
     font-size: 28px;
+}
+.colum2{
+    margin-left: 20vh;
 }
 .colum2 ul li{
     color: aliceblue;
