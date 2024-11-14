@@ -1,6 +1,6 @@
 Данный сайт-визитка для кондитерской разработан двумя студентами с использованием фреймворка Nuxt.vue
 
-# Nuxt 3 Minimal Starter
+# Nuxt 3 минимальный запуск
 
 Посмотрите [Nuxt 3 документацию](https://nuxt.com/docs/getting-started/introduction), чтобы узнать больше.
 
