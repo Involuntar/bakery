@@ -1,10 +1,12 @@
+Данный сайт-визитка для кондитерской разработан двумя студентами с использованием фреймворка Nuxt.vue
+
 # Nuxt 3 Minimal Starter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Посмотрите [Nuxt 3 документацию](https://nuxt.com/docs/getting-started/introduction), чтобы узнать больше.
 
-## Setup
+## Установка
 
-Make sure to install the dependencies:
+Убедитесь, что зависимости установлены:
 
 ```bash
 # npm
@@ -20,9 +22,9 @@ yarn install
 bun install
 ```
 
-## Development Server
+## Сервер разработки
 
-Start the development server on `http://localhost:3000`:
+Сервер запускается по адресу: `http://localhost:3000`:
 
 ```bash
 # npm
@@ -38,9 +40,9 @@ yarn dev
 bun run dev
 ```
 
-## Production
+## Продакшен
 
-Build the application for production:
+Создание файлов для продакшена
 
 ```bash
 # npm
@@ -56,7 +58,7 @@ yarn build
 bun run build
 ```
 
-Locally preview production build:
+Локальный предпросмотр продакшена:
 
 ```bash
 # npm
@@ -72,4 +74,4 @@ yarn preview
 bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Взгляните [документацию развёртывания](https://nuxt.com/docs/getting-started/deployment) для дополнительной информации.
