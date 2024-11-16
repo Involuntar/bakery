@@ -99,6 +99,7 @@ export default {
 
     .catalog-header {
         padding-bottom: 50px;
+        display: block;
     }
 
     .catalog-header p:nth-child(2) {
