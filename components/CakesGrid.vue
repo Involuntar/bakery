@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 .cakes-grid {
     display: grid;

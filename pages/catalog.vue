@@ -43,7 +43,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .catalog-header {
     padding: 0 40px;
     height: 25vh;

@@ -49,7 +49,7 @@
     </main>
 </template>
 
-<style>
+<style scoped>
 img, svg {
 	max-width: 100%;
 	height: auto;

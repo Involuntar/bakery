@@ -38,7 +38,7 @@
 </template>
 <script>
 </script>
-<style>
+<style scoped>
 ul{
     list-style: none;
     color: aliceblue;

@@ -8,7 +8,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 .app-footer {
     width: 100%;
     bottom: 0;

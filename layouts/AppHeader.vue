@@ -32,7 +32,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 .header {
     display: flex;
     align-items: center;
