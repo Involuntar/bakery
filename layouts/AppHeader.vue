@@ -48,7 +48,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 .main-header {
     background: linear-gradient(#00000026 67.07%, #66666608 96.54%);
     background-color: #EAE2D3;

@@ -2,7 +2,8 @@
     <div class="catalog">
         <div class="catalog-header">
             <p class="category-name">{{ getCategory.CatName }}</p>
-            <p>Семейная кондитерская, создающая сбалансированные десерты на каждый день и уникальные торты по индивидуальному заказу.</p>
+            <p>Семейная кондитерская, создающая сбалансированные десерты на каждый день <br>
+                и уникальные торты по индивидуальному заказу.</p>
         </div>
         <div class="categories">
             <button v-for="(cat, index) in getCakes" :key="index" @click="chooseCat(cat)">{{ cat.CatName }}</button>
@@ -35,31 +36,35 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .catalog {
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .catalog-header {
-    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 200px;
-    margin-bottom: 20px;
+    margin: 0px auto 40px auto;
+    max-width: 1200px;
 }
 
 .catalog-header p:nth-child(2) {
-    font-size: 20px;
+    font-size: 16px;
+    text-align: right;
 }
 
 .category-name {
-    font-size: 55px;
+    font-size: 45px;
     font-family: JejuMyeongjo;
 }
 
 .categories {
     display: flex;
     padding-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .categories button {

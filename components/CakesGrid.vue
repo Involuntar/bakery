@@ -6,7 +6,7 @@
                     <p class="new" :class="(item.New ? 'show' : '')">Новинка</p>
                     <p class="amount">{{ item.Amount }} шт</p>
                 </div>
-                <img :src="item.Picture" alt="" width="280px" height="320px">
+                <img :src="item.Picture" alt="" width="255px" height="300px">
                 <div class="cake-props">
                     <p class="cake-name">{{ item.Name }}</p>
                     <p class="cake-price">{{ item.Price }} руб</p>
@@ -61,10 +61,10 @@ export default {
 
 .card {
     width: fit-content;
+    height: 342px;
     margin-bottom: 10px;
     position: relative;
     font-family: JejuMyeongjo;
-    height: 15%;
 }
 
 img {
