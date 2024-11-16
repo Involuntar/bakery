@@ -8,24 +8,22 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 .app-footer {
     width: 100%;
-    bottom: 0;
-    position: fixed;
     height: 50px;
     background: #3D3D3DFA;
 }
 
 .footer {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
     color: #FFFFFF;
-    padding: 5px 40px;
     font-family: JejuMyeongjo;
     font-size: 14px;
-    width: 1200px;
-    margin: 0 auto;
 }
 
 .policy {
