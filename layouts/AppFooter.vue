@@ -24,6 +24,7 @@
     color: #FFFFFF;
     font-family: JejuMyeongjo;
     font-size: 14px;
+    padding: 0 50px;
 }
 
 .policy {
