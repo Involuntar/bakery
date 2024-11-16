@@ -114,10 +114,12 @@
 
 .features-header h1 {
     font-size: 2.89vw;
+    font-family: JejuMyeongjo;
 }
 
 .features-header p {
     font-size: 1vw;
+    font-family: JejuMyeongjo;
 }
 
 .feature {
@@ -126,17 +128,18 @@
     align-items: center;
     counter-increment: count 1;
     padding-left: 23px;
+    font-family: Inknut Antiqua SemiBold;
 }
 
 .feature p:nth-child(1)::before {
     content: '0' counter(count, decimal)'\00a0\00a0\00a0\00a0\00a0';
-    font-family: Inknut Antiqua;
     font-size: 1.27vw;
 }
 
 .feature p:nth-child(2) {
     width: 30.7vw;
     font-size: 0.93vw;
+    font-family: JejuMyeongjo;
 }
 
 .contacts {
@@ -239,6 +242,16 @@
 @font-face {
     font-family: Inknut Antiqua;
     src: url("/fonts/InknutAntiqua-Light.ttf");
+}
+
+@font-face {
+    font-family: Inknut Antiqua SemiBold;
+    src: url('/fonts/InknutAntiqua-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: JejuMyeongjo;
+    src: url('/fonts/JejuMyeongjo-Regular.ttf');
 }
 
 @media screen and (width <=768px) {
