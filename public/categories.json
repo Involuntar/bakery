@@ -1,43 +1,161 @@
 {
-    "bento": {"CatName": "Бенто-торты", 
-    "Items": [
-        {"Name": "b", "Amount": "b", "Price": 1, "Picture": "b", "New": false}
-    ]},
-    "readyMadeCakes": {"CatName": "Готовые торты", 
-    "Items": [
-        {"Name": "b", "Amount": "b", "Price": 1, "Picture": "b", "New": false}
-    ]},
-    "autumn": {"CatName": "Осенняя коллекция", 
-    "Items": [
-        {"Name": "Пирожные-Ассорти", "Amount": 6, "Price": 2500, "Picture": "images/assorted.png", "New": true}, 
-        {"Name": "Пирожные-Ванильное-детство", "Amount": 2, "Price": 570, "Picture": "images/vanilaChildhood.png", "New": false}, 
-        {"Name": "Пирожные-Шу-Карамельное", "Amount": 6, "Price": 1500, "Picture": "images/caramelShoo.png", "New": false}, 
-        {"Name": "Пирожные-Трухлявый-пень", "Amount": 6, "Price": 1800, "Picture": "images/rottenStump.png", "New": false}, 
-        {"Name": "Пирожные-Какао-боб", "Amount": 2, "Price": 980, "Picture": "images/cacaoBean.png", "New": false}, 
-        {"Name": "Тарталетка-Пекан", "Amount": 2, "Price": 390, "Picture": "images/pekan.png", "New": false}, 
-        {"Name": "Пирожные-Крем-чиз-малина", "Amount": 6, "Price": 2160, "Picture": "images/creamCheeseRasp.png", "New": false}, 
-        {"Name": "Пирожное-Чародейка", "Amount": 2, "Price": 630, "Picture": "images/sorceress.png", "New": false}, 
-        {"Name": "Пирожное-шоколадная-вишня", "Amount": 5, "Price": 1300, "Picture": "images/chocoCherry.png", "New": false}, 
-        {"Name": "Пирожное-шоколад-малина", "Amount": 5, "Price": 1300, "Picture": "images/chocoRasp.png", "New": false}
-    ]},
-    "cakes": {"CatName": "Пирожные", 
-    "Items": [
-        {"Name": "b", "Amount": "b", "Price": 1, "Picture": "b", "New": false}
-    ]},
-    "cupcakes": {"CatName": "Капкейки", 
-    "Items": [
-        {"Name": "b", "Amount": "b", "Price": 1, "Picture": "b", "New": false}
-    ]},
-    "ppDesert": {"CatName": "ПП десерты", 
-    "Items": [
-        {"Name": "b", "Amount": "b", "Price": 1, "Picture": "b", "New": false}
-    ]},
-    "nonMasticCakes": {"CatName": "Торты без мастики", 
-    "Items": [
-        {"Name": "b", "Amount": "b", "Price": 1, "Picture": "b", "New": false}
-    ]},
-    "eclairs": {"CatName": "Эклеры", 
-    "Items": [
-        {"Name": "b", "Amount": "b", "Price": 1, "Picture": "b", "New": false}
-    ]}
+    "bento": {
+        "CatName": "Бенто-торты",
+        "Items": [
+            {
+                "Name": "b",
+                "Amount": "b",
+                "Price": 1,
+                "Picture": "b",
+                "New": false
+            }
+        ]
+    },
+    "readyMadeCakes": {
+        "CatName": "Готовые торты",
+        "Items": [
+            {
+                "Name": "b",
+                "Amount": "b",
+                "Price": 1,
+                "Picture": "b",
+                "New": false
+            }
+        ]
+    },
+    "autumn": {
+        "CatName": "Осенняя коллекция",
+        "Items": [
+            {
+                "Name": "Пирожные-Ассорти",
+                "Amount": 6,
+                "Price": 2500,
+                "Picture": "images/assorted.png",
+                "New": true
+            },
+            {
+                "Name": "Пирожные-Ванильное-детство",
+                "Amount": 2,
+                "Price": 570,
+                "Picture": "images/vanilaChildhood.png",
+                "New": false
+            },
+            {
+                "Name": "Пирожные-Шу-Карамельное",
+                "Amount": 6,
+                "Price": 1500,
+                "Picture": "images/caramelShoo.png",
+                "New": false
+            },
+            {
+                "Name": "Пирожные-Трухлявый-пень",
+                "Amount": 6,
+                "Price": 1800,
+                "Picture": "images/rottenStump.png",
+                "New": false
+            },
+            {
+                "Name": "Пирожные-Какао-боб",
+                "Amount": 2,
+                "Price": 980,
+                "Picture": "images/cacaoBean.png",
+                "New": false
+            },
+            {
+                "Name": "Тарталетка-Пекан",
+                "Amount": 2,
+                "Price": 390,
+                "Picture": "images/pekan.png",
+                "New": false
+            },
+            {
+                "Name": "Пирожные-Крем-чиз-малина",
+                "Amount": 6,
+                "Price": 2160,
+                "Picture": "images/creamCheeseRasp.png",
+                "New": false
+            },
+            {
+                "Name": "Пирожное-Чародейка",
+                "Amount": 2,
+                "Price": 630,
+                "Picture": "images/sorceress.png",
+                "New": false
+            },
+            {
+                "Name": "Пирожное-шоколадная-вишня",
+                "Amount": 5,
+                "Price": 1300,
+                "Picture": "images/chocoCherry.png",
+                "New": false
+            },
+            {
+                "Name": "Пирожное-шоколад-малина",
+                "Amount": 5,
+                "Price": 1300,
+                "Picture": "images/chocoRasp.png",
+                "New": false
+            }
+        ]
+    },
+    "cakes": {
+        "CatName": "Пирожные",
+        "Items": [
+            {
+                "Name": "b",
+                "Amount": "b",
+                "Price": 1,
+                "Picture": "b",
+                "New": false
+            }
+        ]
+    },
+    "cupcakes": {
+        "CatName": "Капкейки",
+        "Items": [
+            {
+                "Name": "b",
+                "Amount": "b",
+                "Price": 1,
+                "Picture": "b",
+                "New": false
+            }
+        ]
+    },
+    "ppDesert": {
+        "CatName": "ПП десерты",
+        "Items": [
+            {
+                "Name": "b",
+                "Amount": "b",
+                "Price": 1,
+                "Picture": "b",
+                "New": false
+            }
+        ]
+    },
+    "nonMasticCakes": {
+        "CatName": "Торты без мастики",
+        "Items": [
+            {
+                "Name": "b",
+                "Amount": "b",
+                "Price": 1,
+                "Picture": "b",
+                "New": false
+            }
+        ]
+    },
+    "eclairs": {
+        "CatName": "Эклеры",
+        "Items": [
+            {
+                "Name": "b",
+                "Amount": "b",
+                "Price": 1,
+                "Picture": "b",
+                "New": false
+            }
+        ]
+    }
 }
