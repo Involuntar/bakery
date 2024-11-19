@@ -61,7 +61,7 @@
     height: 83px;
     justify-content: space-between;
     padding: 0 50px;
-    max-width: 1200px;
+    max-width: 80%;
 }
 
 .header div {

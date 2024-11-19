@@ -50,16 +50,14 @@
 </template>
 
 <style scoped>
-img, svg {
-	max-width: 100%;
-	height: auto;
-}
 button{
     background-color: rgb(255, 255, 255);
 }
 .container{
+    max-width: 80%;
     display: grid;
-    padding: 4vh 5vh 0vh 5vh;
+    padding: 9vh;
+    margin: 0 auto;
     grid-template-columns: 2fr 1fr;
 }
 .elem1{
@@ -130,21 +128,22 @@ button{
     margin: 0vh 0vh 3vh 5vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 6vh;
 }
 .vk{
     background-image: url("/public/images/aboutus2.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 30px;
-    height: 35vh;
-    width: 35vh;
+    height: 30vh;
+    width: 30vh;
     margin: 0 auto;
     position: relative;
 }
 .blokt1{
     position: absolute;
-    width: 35vh;
-    height: 35vh;
+    width: 30vh;
+    height: 30vh;
     background-color: rgba(0, 0, 0, 0.450);
     color: aliceblue;
     border-radius: 30px;
@@ -221,8 +220,8 @@ button{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 30px;
-    height: 35vh;
-    width: 35vh;
+    height: 30vh;
+    width: 30vh;
     margin: 0 auto;
     position: relative;
 }
