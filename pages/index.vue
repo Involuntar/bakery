@@ -167,113 +167,6 @@ a{
     margin: 0 auto;
     border-radius: 10%;
 }
-.filter1{
-    background-image: url("/public/images/bentoCake.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 31vh;
-    width: 23vh;
-    border-radius: 10%;
-    margin: 0 auto;
-}
-.filter2{
-    background-image: url("/public/images/gotovietorti.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 31vh;
-    width: 23vh;
-    border-radius: 10%;
-    margin: 0 auto;
-}
-.filter3{
-    background-image: url("/public/images/autmcollection.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 31vh;
-    width: 23vh;
-    border-radius: 10%;
-    margin: 0 auto;
-}
-.filter4{
-    background-image: url("/public/images/pirozhenie.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 31vh;
-    width: 23vh;
-    border-radius: 10%;
-    margin: 0 auto;
-}
-.filter5{
-    background-image: url("/public/images/capcake.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 31vh;
-    width: 23vh;
-    border-radius: 10%;
-    margin: 0 auto;
-}
-.filter6{
-    background-image: url("/public/images/ppdeserti.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 31vh;
-    width: 23vh;
-    border-radius: 10%;
-    margin: 0 auto;
-}
-.filter7{
-    background-image: url("/public/images/CakedonthaveMastika.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 31vh;
-    width: 23vh;
-    border-radius: 10%;
-    margin: 0 auto;
-}
-.filter8{
-    background-image: url("/public/images/ecleri.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 31vh;
-    width: 23vh;
-    border-radius: 10%;
-    margin: 0 auto;
-}
-.infogridfiltr{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 1.5vh;
-}
-.infogr1{
-    grid-column: 1;
-    margin: 0 auto;
-    font-weight: 700;
-}
-.infogr2{
-    grid-column: 2;
-    margin: 0 auto;
-}
-.amounts{
-    height: 7vh;
-    width: 7vh;
-    border-radius: 45%;
-    background-color: #515151;
-    color: aliceblue;
-    margin-left: 70%;
-}
-.prefix{
-    width: 40px;
-    margin: 0 auto;
-    padding-top: 1.5vh;
-}
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -308,14 +201,14 @@ a{
 }
 .topInfo #H1{
     font-family: JejuMyeongjo;
-    font-size: 32px;
+    font-size: 2.6rem;
     margin-top: 0vh;
 }
 .blotopinfo{
     text-align: right;
 }
 .blotopinfo p{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: JejuMyeongjo;
     padding-bottom: 2vh;
     margin-top: 0vh;
@@ -325,36 +218,263 @@ a{
     font-size: 20px;
 }
 .storylife{
-    max-width: 1000px;
-    max-height: 580px;
-    margin: 0 auto;
+    width: 80%;
+    height: 60vh;
     display: grid;
     grid-template-columns: auto auto;
-    margin: 10vh auto 10vh auto;
+    margin: 10vh auto;
+    align-items: center;
 }
 .photolife{
     position: relative;
+    margin: 0 auto;
 }
 .storyblok{
-    margin-top: 15vh;
-    margin-left: 30vh;
-    max-width: 600px;
+    width: 50vh;
 	-webkit-transform: skew(-20deg);
 	-moz-transform: skew(-20deg);
 	-o-transform: skew(-20deg);
     font-family: JejuMyeongjo;
-    font-size: 16px;
+    border-end-end-radius: 10%;
+    font-size: 1rem;
     color: aliceblue;
     position: absolute;
-    padding: 8vh 10vh 8vh 10vh;
+    padding: 6% 8% 6% 8%;
+    margin-left: 25%;
     background-color: rgba(81, 81, 81, 0.8);
 }
 .ContainerCardFilter{
     display: grid;
-    max-width: 80%;
-    margin: 0 auto;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 6vh;
+    align-items: center;
+}
+.filter1{
+    background-image: url("/public/images/bentoCake.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 28vh;
+    width: 20vh;
+    border-radius: 10%;
+    margin: 0 auto;
+}
+.filter2{
+    background-image: url("/public/images/gotovietorti.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 28vh;
+    width: 20vh;
+    border-radius: 10%;
+    margin: 0 auto;
+}
+.filter3{
+    background-image: url("/public/images/autmcollection.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 28vh;
+    width: 20vh;
+    border-radius: 10%;
+    margin: 0 auto;
+}
+.filter4{
+    background-image: url("/public/images/pirozhenie.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 28vh;
+    width: 20vh;
+    border-radius: 10%;
+    margin: 0 auto;
+}
+.filter5{
+    background-image: url("/public/images/capcake.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 28vh;
+    width: 20vh;
+    border-radius: 10%;
+    margin: 0 auto;
+}
+.filter6{
+    background-image: url("/public/images/ppdeserti.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 28vh;
+    width: 20vh;
+    border-radius: 10%;
+    margin: 0 auto;
+}
+.filter7{
+    background-image: url("/public/images/CakedonthaveMastika.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 28vh;
+    width: 20vh;
+    border-radius: 10%;
+    margin: 0 auto;
+}
+.filter8{
+    background-image: url("/public/images/ecleri.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 28vh;
+    width: 20vh;
+    border-radius: 10%;
+    margin: 0 auto;
+}
+.infogridfiltr{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5vh;
+}
+.infogr1{
+    grid-column: 1;
+    margin: 0 auto;
+    font-weight: 700;
+}
+.infogr2{
+    grid-column: 2;
+    margin: 0 auto;
+}
+.amounts{
+    height: 7vh;
+    width: 7vh;
+    border-radius: 45%;
+    background-color: #515151;
+    color: aliceblue;
+    margin-left: 70%;
+}
+.prefix{
+    width: 40px;
+    margin: 0 auto;
+    padding-top: 1.5vh;
+}
+@media (width <= 800px) {
+    .container-info{
+        height: 30vh;
+        padding: 2vh 0vh 2vh 0vh;
+        text-align: left;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .colum1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .colum2{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .colum1 h1{
+       font-family: JejuMyeongjo-Regular;
+       font-size: 3rem;
+       margin-top: 0;
+    }
+    .colum1 a{
+       color: aliceblue;
+       text-decoration: underline;
+       font-size: 2rem;
+    }
+    .topInfo{
+       padding: 2vh 6vh 2vh 6vh;
+       display: grid;
+       grid-template-columns: auto;
+       gap: 1vh;
+    }
+    .blotopinfo a{
+       text-decoration: underline;
+       font-size: 2rem;
+    }
+    .ContainerCardFilter{
+       display: grid;
+       max-width: 80%;
+       margin: 0 auto;
+       align-items: center;
+       grid-template-columns: 1fr 1fr;
+       gap: 5vh;
+    }
+    .cardindex{
+       height: 25vh;
+       width: 20vh;
+       margin: 0 auto;
+       border-radius: 10%;
+       background-color: brown;
+       margin-bottom: 4vh;
+    }
+    .filter1{
+       height: 28vh;
+       width: 20vh;
+       border-radius: 10%;
+    }
+    .filter2{
+       height: 28vh;
+       width: 20vh;
+       border-radius: 10%;
+    }
+    .filter3{
+       height: 28vh;
+       width: 20vh;
+       border-radius: 10%;
+    }
+    .filter4{
+       height: 28vh;
+       width: 20vh;
+       border-radius: 10%;
+    }
+    .filter5{
+       height: 28vh;
+       width: 20vh;
+       border-radius: 10%;
+    }
+    .filter6{
+       height: 28vh;
+       width: 20vh;
+       border-radius: 10%;
+    }
+    .filter7{
+       height: 28vh;
+       width: 20vh;
+       border-radius: 10%;
+    }
+    .filter8{
+       height: 28vh;
+       width: 20vh;
+       border-radius: 10%;
+    }
+    .storylife{
+       width: 100%;
+       height: 50vh;
+       display: grid;
+       grid-template-columns: auto auto;
+       align-items: center;
+       margin: 10vh 0;
+    }
+    .storyblok{
+       margin-top: 20%;
+       margin-left: 15%;
+       width: 25vh;
+	   -webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	   -o-transform: skew(-20deg);
+       font-family: JejuMyeongjo;
+       border-radius: 10%;
+       font-size: 1rem;
+       color: aliceblue;
+       position: absolute;
+       padding: 4vh 5vh 4vh 5vh;
+       background-color: rgba(81, 81, 81, 0.8);
+    }
 }
 </style>
