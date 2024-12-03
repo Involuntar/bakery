@@ -13,6 +13,7 @@
     width: 100%;
     height: 50px;
     background: #3D3D3DFA;
+    margin-top: 37px;
 }
 
 .footer {

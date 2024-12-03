@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
@@ -7,7 +7,11 @@
 </template>
 
 <style>
+.app {
+  height: 100vh;
+}
 body {
+  height: 100vh;
   margin: 0;
   background-color: #EAE2D3;
 }

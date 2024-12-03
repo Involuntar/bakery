@@ -215,6 +215,12 @@ h3 {
     z-index: 2;
 }
 
+@media screen and (width <= 1200px) {
+    .header {
+        max-width: 768px;
+    }
+}
+
 @media screen and (width <=768px) {
     .pages-hamburger {
         display: block;

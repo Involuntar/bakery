@@ -79,16 +79,17 @@
     align-items: center;
     justify-content: space-around;
     max-width: 1200px;
-    margin: 0 auto 2.96vh auto;
-    min-height: 768px;
+    margin: 0 auto 0 auto;
+    height: 100%;
+    gap: 0 38px;
 }
 
 .main-photo {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 53vw;
-    height: 69vh;
+    width: 770px;
+    height: 528px;
     background-color: rgb(0, 0, 0, 0.6);
     border-radius: 30px;
     position: relative;
@@ -113,12 +114,12 @@
 }
 
 .features-header h1 {
-    font-size: 2.89vw;
+    font-size: 36px;
     font-family: JejuMyeongjo;
 }
 
 .features-header p {
-    font-size: 1vw;
+    font-size: 12px;
     font-family: JejuMyeongjo;
 }
 
@@ -133,18 +134,21 @@
 
 .feature p:nth-child(1)::before {
     content: '0' counter(count, decimal)'\00a0\00a0\00a0\00a0\00a0';
-    font-size: 1.27vw;
+}
+
+.feature p:nth-child(1) {
+    font-size: 16px;
 }
 
 .feature p:nth-child(2) {
-    width: 30.7vw;
-    font-size: 0.93vw;
+    width: 430px;
+    font-size: 11px;
     font-family: JejuMyeongjo;
 }
 
 .contacts {
-    width: 26vw;
-    height: 69vh;
+    width: 430px;
+    height: 528px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -155,7 +159,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 37vh;
+    height: 282px;
     background-color: rgb(0, 0, 0, 0.45);
     border-radius: 30px;
     position: relative;
@@ -177,7 +181,7 @@
 .phone-number p {
     text-align: center;
     color: #FFF;
-    font-size: 1vw;
+    font-size: 12px;
     font-family: Inknut Antiqua;
 }
 
@@ -187,7 +191,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 29vh;
+    height: 220px;
     background-color: rgb(0, 0, 0, 0.2);
     border-radius: 30px;
     position: relative;
@@ -211,7 +215,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 20vw;
+    width: 346px;
 }
 
 .vkontakte-text,
@@ -220,21 +224,20 @@
     justify-content: center;
     align-items: center;
     background-color: #FFF;
-    border-radius: 15px;
+    border-radius: 10px;
     font-family: Inknut Antiqua;
-    font-size: 1.3vw;
-    width: 11vw;
-    height: 4vh;
+    font-size: 16px;
+    width: 200px;
 }
 
 .social-media button {
     background-image: url("/public/images/Link.svg");
-    background-size: 2vh;
+    background-size: 24px;
     background-repeat: no-repeat;
     background-position: center;
-    width: 4vh;
-    height: 4vh;
-    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     border: 1px solid #000;
     cursor: pointer;
 }
@@ -254,9 +257,73 @@
     src: url('/fonts/JejuMyeongjo-Regular.ttf');
 }
 
+@media screen and (width <= 1200px) {
+    .corporate {
+        max-width: 768px;
+        gap: 0 24px;
+    }
+
+    .main-photo {
+        width: 493px;
+        height: 338px;
+    }
+    
+    .contacts {
+        width: 275px;
+        height: 338px;
+    }
+
+    .phone-number {
+        height: 180px;
+    }
+
+    .social-media {
+        height: 141px;
+    }
+
+    .features-header h1 {
+        font-size: 23px;
+    }
+
+    .features-header p {
+        font-size: 8px;
+    }
+
+    .feature p:nth-child(1) {
+        font-size: 10px;
+    }
+
+    .feature p:nth-child(2) {
+        font-size: 7px;
+        width: 275px;
+    }
+
+    .phone-number p {
+        font-size: 8px;
+    }
+
+    .vkontakte, 
+    .telegram {
+        width: 221px;
+    }
+
+    .vkontakte-text,
+    .telegram-text {
+        font-size: 10px;
+        width: 128px;
+    }
+
+    .social-media button {
+        width: 26px;
+        height: 26px;
+        background-size: 10px;
+    }
+}
+
 @media screen and (width <=768px) {
     .corporate {
         flex-direction: column;
+        height: initial;
     }
 
     .main-photo {
