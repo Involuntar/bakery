@@ -80,7 +80,7 @@
     justify-content: space-around;
     max-width: 1200px;
     margin: 0 auto 0 auto;
-    height: 100%;
+    height: 78%;
     gap: 0 38px;
 }
 
@@ -329,11 +329,12 @@
     .main-photo {
         width: 91.8vw;
         margin-bottom: 2.4vh;
-        height: 105vh;
+        height: fit-content;
     }
 
     .contacts {
         width: 91.8vw;
+        height: 96vw;
     }
 
     .vkontakte-text,
@@ -365,13 +366,26 @@
         font-size: 3.6vw;
     }
 
-    .feature p:nth-child(1)::before {
+    .feature p:nth-child(1) {
         font-size: 4.1vw;
     }
 
     .feature p:nth-child(2) {
         font-size: 3.6vw;
         width: auto;
+    }
+
+    .phone-number {
+        height: 47vw;
+    }
+
+    .social-media {
+        height: 42vw;
+    }
+
+    .social-media button {
+        width: 8vw;
+        height: 8vw;
     }
 }
 </style>
