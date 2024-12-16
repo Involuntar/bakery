@@ -6,13 +6,13 @@ import AppFooter from '~/layouts/AppFooter.vue';
 <template>
     <div class="layout">
         <AppHeader />
-        <slot class="slot" />
+        <slot />
         <AppFooter />
     </div>
 </template>
 
 <style>
 .layout {
-    height: 100%;
+    height: 100vh;
 }
 </style>

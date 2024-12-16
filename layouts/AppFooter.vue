@@ -10,6 +10,8 @@
 
 <style scoped>
 .app-footer {
+    position: absolute;
+    margin-bottom: -1;
     width: 100%;
     height: 50px;
     background: #3D3D3DFA;
