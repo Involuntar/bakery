@@ -4,9 +4,15 @@ import AppFooter from '~/layouts/AppFooter.vue';
 </script>
 
 <template>
-    <div>
+    <div class="layout">
         <AppHeader />
         <slot />
         <AppFooter />
     </div>
 </template>
+
+<style>
+.layout {
+    height: 100vh;
+}
+</style>
